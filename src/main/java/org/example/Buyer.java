@@ -1,12 +1,15 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Buyer {
     String name;
     int age;
     String address;
-    Vegetables shoppingCart[];
+//    Vegetables shoppingCart[];
+
+    ArrayList<Vegetables> shoppingCart;
 
     double totalPurchaseAmount;
 
@@ -14,11 +17,11 @@ public class Buyer {
         name = "";
         age = 0;
         address = "";
-        shoppingCart = new Vegetables[10];
+        shoppingCart = new ArrayList<>();
         totalPurchaseAmount = 0.0;
     }
 
-    public Buyer(String name, int age, String address, Vegetables[] shoppingCart) {
+    public Buyer(String name, int age, String address, ArrayList<Vegetables> shoppingCart) {
         this.name = name;
         this.age = age;
         this.address = address;
@@ -38,7 +41,7 @@ public class Buyer {
         this.address = address;
     }
 
-    public void setShoppingCart(Vegetables[] shoppingCart) {
+    public void setShoppingCart(ArrayList<Vegetables> shoppingCart) {
         this.shoppingCart = shoppingCart;
     }
 
@@ -54,7 +57,7 @@ public class Buyer {
         return address;
     }
 
-    public Vegetables[] getShoppingCart() {
+    public ArrayList<Vegetables> getShoppingCart() {
         return shoppingCart;
     }
 
@@ -68,7 +71,7 @@ public class Buyer {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", address='" + address + '\'' +
-                ", shoppingCart=" + Arrays.toString(shoppingCart) +
+                ", shoppingCart=" + shoppingCart +
                 ", totalPurchaseAmount=" + totalPurchaseAmount +
                 '}';
     }
