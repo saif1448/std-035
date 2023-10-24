@@ -87,6 +87,22 @@ public class Vegetables {
         System.out.println(c);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public double getSize() {
+        return size;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
     @Override
     public String toString() {
         return "Vegetables{" +
