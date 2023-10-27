@@ -1,15 +1,16 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.Externalizable;
+import java.io.InputStreamReader;
+import java.nio.Buffer;
+import java.sql.SQLOutput;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-
-       Vegetables veg = new Vegetables("potato", "brown", 1.24, 0.35, "watery", 2.67);
-
-        System.out.println(veg.getName().toLowerCase().startsWith("p"));
-
-
+        int i = 10;
+        System.out.println(--i);
+        System.out.println(i);
     }
 }
