@@ -22,6 +22,8 @@ public class Main {
 
         System.out.println(res);
 
+        System.out.println("Adding a new line");
+
     }
 
 }
