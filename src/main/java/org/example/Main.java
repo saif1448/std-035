@@ -16,13 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CalculatePolygonArea ca = new CalculatePolygonArea();
-
-        double res = ca.calculateSquareArea(4);
-
-        System.out.println(res);
-
-        System.out.println("Adding a new line");
+       System.out.println("printing something");
 
     }
 
