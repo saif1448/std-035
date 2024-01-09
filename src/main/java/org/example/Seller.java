@@ -69,4 +69,8 @@ public class Seller {
                 ", total_amount=" + total_amount +
                 '}';
     }
+
+    public void myDummyMethod(){
+        System.out.println("asdasd");
+    }
 }
