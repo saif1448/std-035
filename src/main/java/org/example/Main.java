@@ -22,7 +22,11 @@ public class Main {
 
         System.out.println(res);
 
-        System.out.println("Adding a new line");
+       System.out.println("hello");
+       System.out.println("hello java");
+       int a= 12;
+       int b = 45;
+       System.out.println(a+b);
 
     }
 
